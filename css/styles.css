@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: url('/css/resources/p.png') no-repeat center center fixed; /* Assuming coffee-blend.jpg is your image */
+    background: url('/css/resources/p.webp') no-repeat center center fixed; /* Assuming coffee-blend.jpg is your image */
     background-size: cover;
     color: #FFFFFF; /* Light text color to stand out against the dark image */
 }
@@ -112,6 +112,36 @@ nav a:hover {
 #specials .special-item p {
     color: #FFFFFF; /* White color for paragraph text */
 }
+
+/* About Us Section Styles */
+#about {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    margin: 20px;
+    border-radius: 10px;
+    color: #FFD700; /* Gold color for the text */
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#about h1, #about h2, #about h3 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+#about p {
+    color: #FFFFFF; /* White color for paragraph text */
+    margin-bottom: 20px;
+}
+
+#about .team-member {
+    margin-bottom: 40px;
+}
+
 
 /* Footer Styles */
 footer {
