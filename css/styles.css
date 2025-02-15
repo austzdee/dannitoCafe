@@ -113,36 +113,6 @@ nav a:hover {
     color: #FFFFFF; /* White color for paragraph text */
 }
 
-/* About Us Section Styles */
-#about {
-    padding: 60px 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    margin: 20px;
-    border-radius: 10px;
-    color: #FFD700; /* Gold color for the text */
-}
-
-#about .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-#about h1, #about h2, #about h3 {
-    color: #FFD700; /* Gold color for headings */
-}
-
-#about p {
-    color: #FFFFFF; /* White color for paragraph text */
-    margin-bottom: 20px;
-}
-
-#about .team-member {
-    margin-bottom: 40px;
-}
-
-
 /* Footer Styles */
 footer {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
@@ -162,6 +132,154 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/* Contact Us Section Styles */
+#contact {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black background for better contrast */
+    margin: 20px;
+    border-radius: 10px;
+    color: #FFD700; /* Gold color for the text */
+}
+
+#contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contact h1, #contact h2 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+#contact p {
+    color: #FFFFFF; /* White color for paragraph text */
+    margin-bottom: 20px;
+}
+
+#contact .form-group {
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFD700; /* Gold color for labels */
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #FFD700; /* Gold border for inputs and textarea */
+    background-color: #333333; /* Darker background color for inputs and textarea */
+    color: #FFFFFF; /* White text color */
+    margin-bottom: 10px;
+}
+
+#contact button {
+    background-color: #FFD700; /* Gold button background */
+    color: #000000; /* Black button text */
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contact button:hover {
+    background-color: #FFC107; /* Lighter gold background on hover */
+}
+
+/* FAQ Section Styles */
+#faq {
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black background for better contrast */
+    color: #FFD700; /* Gold color for the text */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#faq .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#faq h2 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background: transparent; /* Transparent background for questions */
+    color: #FFD700; /* Gold color for questions */
+    border: 1px solid #FFD700; /* Gold border for questions */
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.faq-question:hover {
+    background: #333333; /* Darker background on hover for better contrast */
+}
+
+.faq-answer {
+    padding: 10px;
+    background: transparent; /* Transparent background for answers */
+    display: none;
+    color: #FFFFFF; /* White text for answers */
+}
+
+
+/* FAQ Section Styles */
+#faq {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    margin: 20px;
+    border-radius: 10px;
+    color: #FFD700; /* Gold color for the text */
+  }
+
+#faq .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#faq h2 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background:  transparent;   /*#FFD700; /* Gold background for questions */
+    color: #FFC107;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.faq-question:hover {
+    background:  #6e6a5e; /* Slightly lighter gold on hover */
+}
+
+.faq-answer {
+    padding: 10px;
+    background:  transparent; /*rgba(0, 0, 0, 0.5); /* Semi-transparent black background for answers */
+    display: none;
+    color: #FFFFFF; /* White text for answers */
 }
 
 /* Responsive Styles */
