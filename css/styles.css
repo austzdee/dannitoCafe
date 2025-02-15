@@ -2,10 +2,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('/css/resources/coffee-cozy.webp') no-repeat center center fixed;
-    background-size: cover;    
-    color: #ffffff; /* Complementing color for text */
+    font-family: 'Arial', sans-serif;
+    background: url('/css/resources/p.png') no-repeat center center fixed; /* Assuming coffee-blend.jpg is your image */
+    background-size: cover;
+    color: #FFFFFF; /* Light text color to stand out against the dark image */
 }
 
 /* Header Styles */
@@ -18,6 +18,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    color: #FFD700; /* Gold color for the header text */
 }
 
 /* Navigation Styles */
@@ -26,6 +27,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
 nav ul li {
@@ -33,35 +35,103 @@ nav ul li {
 }
 
 nav a {
-    color: #ffffff;
+    color: #FFD700; /* Gold color for navigation links */
     text-decoration: none;
     padding: 15px 20px;
     display: block;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #FFD700; /* Gold color for hover effect */
-    color: #000000;
+    background-color: #FFFFFF; /* White background on hover */
+    color: #000000; /* Black text on hover */
 }
 
-/* Main Content Styles */
-#home {
+/* Hero Section Styles */
+#hero {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     padding: 80px 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     margin: 20px;
     border-radius: 10px;
+}
+
+#hero .hero-content h1 {
+    color: #FFD700; /* Gold color for the main heading */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#hero .hero-content p {
+    color: #FFFFFF; /* White color for paragraph text */
+    margin: 20px 0;
+}
+
+#hero .btn {
+    background-color: #FFD700; /* Gold button background */
+    color: #000000; /* Black button text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero .btn:hover {
+    background-color: #FFFFFF; /* White background on hover */
+    color: #000000; /* Black text on hover */
+}
+
+/* Specials Section Styles */
+#specials {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#specials .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+#specials .special-item {
+    width: 30%;
+    margin: 20px 0;
+    color: #FFD700; /* Gold color for headings */
+    text-align: left; /* Align text to left for better readability */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+#specials .special-item h3 {
+    margin-bottom: 10px;
+}
+
+#specials .special-item p {
+    color: #FFFFFF; /* White color for paragraph text */
 }
 
 /* Footer Styles */
 footer {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: #ffffff;
+    color: #FFD700; /* Gold color for footer text */
     text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+footer a {
+    color: #FFD700; /* Gold color for footer links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Responsive Styles */
@@ -78,9 +148,13 @@ footer {
         margin: 10px 0;
     }
 
-    #home {
+    #hero {
         padding: 40px 10px;
         margin: 10px;
+    }
+
+    #specials .special-item {
+        width: 100%;
     }
 }
 
@@ -101,7 +175,15 @@ footer {
         padding: 10px 15px;
     }
 
-    #home {
+    #hero {
         padding: 20px 5px;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 2em;
+    }
+
+    #specials .special-item {
+        width: 100%;
     }
 }
