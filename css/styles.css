@@ -118,8 +118,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     color: #FFD700; /* Gold color for footer text */
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 20px;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -132,6 +132,12 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Underline on hover */
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -193,6 +199,38 @@ footer a:hover {
     background-color: #FFC107; /* Lighter gold background on hover */
 }
 
+
+/* About Us Section Styles */
+#about .container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#about h1, #about h2, #about h3 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+#about p {
+    color: #FFFFFF; /* White color for paragraph text */
+}
+
+/* Team Member Styles */
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-member h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    margin: 5px 0
+}
+
 /* FAQ Section Styles */
 #faq {
     padding: 60px 20px;
@@ -237,6 +275,66 @@ footer a:hover {
     color: #FFFFFF; /* White text for answers */
 }
 
+
+/* Menu Category Styles */
+.menu-category {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.menu-category h1 {
+    color: #FFD700; /* Gold color for main heading */
+    margin-bottom: 30px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.category-item {
+    width: 30%;
+    margin: 20px 0;
+    color: #FFD700; /* Gold color for headings */
+    text-align: left; /* Align text to left for better readability */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for category items */
+    border-radius: 10px;
+}
+
+.category-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category-item h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.category-item p {
+    color: #FFFFFF; /* White color for paragraph text */
+}
+
+.category-item .btn {
+    background-color: #FFD700; /* Gold button background */
+    color: #000000; /* Black button text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.category-item .btn:hover {
+    background-color: #FFFFFF; /* White background on hover */
+    color: #000000
 
 
 /* Responsive Styles */
