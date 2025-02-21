@@ -303,7 +303,7 @@ footer .footer-content {
 /* Menu Category Styles */
 .menu-category {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 15px;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     margin: 20px;
     border-radius: 10px;
@@ -313,6 +313,12 @@ footer .footer-content {
     color: #FFD700; /* Gold color for main heading */
     margin-bottom: 30px;
 }
+
+.highlighted {
+    border: 2px solid #FFD700; /* Gold border for highlight */
+    box-shadow: 0 0 10px #FFD700; /* Gold glow for highlight */
+}
+
 
 .categories {
     display: flex;
