@@ -47,6 +47,22 @@ nav a:hover {
     color: #000000; /* Black text on hover */
 }
 
+#greeting-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #FFD700; /* Gold text color */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#greeting-container h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+
 /* Hero Section Styles */
 #hero {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
@@ -275,6 +291,14 @@ footer .footer-content {
     color: #FFFFFF; /* White text for answers */
 }
 
+.faq-answer{
+    display: none;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
 
 /* Menu Category Styles */
 .menu-category {
@@ -335,7 +359,49 @@ footer .footer-content {
 .category-item .btn:hover {
     background-color: #FFFFFF; /* White background on hover */
     color: #000000
+}
 
+
+/*Products styles*/
+
+#products .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-gap: 20px; /* Space between items */
+    padding: 20px;
+    justify-items: center;
+}
+
+.product-item {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFD700; /* Gold color for headings */
+    width: 100%; /* Full width for grid layout */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #FFFFFF; /* White color for paragraph text */
+    margin-bottom: 10px;
+}
+
+.product-item .price {
+    font-size: 1.2em;
+    color: #FFD700; /* Gold color for price */
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

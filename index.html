@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danito Café - Home</title>
     <link rel="stylesheet" href="/css/styles.css"> <!-- Link to your CSS file -->
+    <meta name="description" content="Welcome to Danito Café. Indulge in the finest coffee experience. Check out our menu, specials, and more!">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <nav>
+    <header role="banner">
+        <nav role="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -19,10 +20,14 @@
             </ul>
         </nav>
     </header>
+    
 
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
+
+            <!--Greeting function-->
+            <div id="greeting-container"></div>
             <h1>Welcome to Danito Café</h1>
             <p>Indulge in the finest coffee experience.</p>
             <a href="products.html" class="btn">View Our Products</a>
@@ -49,11 +54,12 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <p>&copy; 2025 Danito Café. All rights reserved.</p>
             <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
         </div>
     </footer>
+    <script src="/Javascript/greetings.js"></script>
 	</body>
 	</html>
