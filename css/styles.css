@@ -3,14 +3,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: url('./resources/p.webp') no-repeat center center fixed; /* Assuming coffee-blend.jpg is your image */
+    background: url('./resources/p.webp') no-repeat center center fixed; 
     background-size: cover;
-    color: #FFFFFF; /* Light text color to stand out against the dark image */
+    color: #FFFFFF;
 }
 
 /* Header Styles */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
 }
@@ -18,7 +18,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #FFD700; /* Gold color for the header text */
+    color: #FFD700;
 }
 
 /* Navigation Styles */
@@ -27,7 +27,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav a {
-    color: #FFD700; /* Gold color for navigation links */
+    color: #FFD700;
     text-decoration: none;
     padding: 15px 20px;
     display: block;
@@ -43,15 +43,15 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #FFFFFF; /* White background on hover */
-    color: #000000; /* Black text on hover */
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 #greeting-container {
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: #FFD700; /* Gold text color */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFD700;
     border-radius: 10px;
     margin: 20px;
 }
@@ -61,11 +61,9 @@ nav a:hover {
     font-size: 2em;
 }
 
-
-
 /* Hero Section Styles */
 #hero {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.5);
     padding: 80px 20px;
     text-align: center;
     margin: 20px;
@@ -73,19 +71,19 @@ nav a:hover {
 }
 
 #hero .hero-content h1 {
-    color: #FFD700; /* Gold color for the main heading */
+    color: #FFD700;
     font-size: 2.5em;
     margin: 0;
 }
 
 #hero .hero-content p {
-    color: #FFFFFF; /* White color for paragraph text */
+    color: #FFFFFF;
     margin: 20px 0;
 }
 
 #hero .btn {
-    background-color: #FFD700; /* Gold button background */
-    color: #000000; /* Black button text */
+    background-color: #FFD700;
+    color: #000000;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -93,15 +91,15 @@ nav a:hover {
 }
 
 #hero .btn:hover {
-    background-color: #FFFFFF; /* White background on hover */
-    color: #000000; /* Black text on hover */
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 /* Specials Section Styles */
 #specials {
     padding: 60px 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 20px;
     border-radius: 10px;
 }
@@ -109,16 +107,16 @@ nav a:hover {
 #specials .container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-wrap: wrap;
 }
 
 #specials .special-item {
     width: 30%;
     margin: 20px 0;
-    color: #FFD700; /* Gold color for headings */
-    text-align: left; /* Align text to left for better readability */
+    color: #FFD700;
+    text-align: left;
     padding: 10px;
-    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    box-sizing: border-box;
 }
 
 #specials .special-item h3 {
@@ -126,13 +124,13 @@ nav a:hover {
 }
 
 #specials .special-item p {
-    color: #FFFFFF; /* White color for paragraph text */
+    color: #FFFFFF;
 }
 
 /* Footer Styles */
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: #FFD700; /* Gold color for footer text */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFD700;
     text-align: center;
     padding: 20px;
     position: relative;
@@ -141,13 +139,13 @@ footer {
 }
 
 footer a {
-    color: #FFD700; /* Gold color for footer links */
+    color: #FFD700;
     text-decoration: none;
     margin: 0 10px;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 footer .footer-content {
@@ -156,15 +154,13 @@ footer .footer-content {
     align-items: center;
 }
 
-
-
 /* Contact Us Section Styles */
 #contact {
     padding: 60px 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black background for better contrast */
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 20px;
     border-radius: 10px;
-    color: #FFD700; /* Gold color for the text */
+    color: #FFD700;
 }
 
 #contact .container {
@@ -175,11 +171,11 @@ footer .footer-content {
 }
 
 #contact h1, #contact h2 {
-    color: #FFD700; /* Gold color for headings */
+    color: #FFD700;
 }
 
 #contact p {
-    color: #FFFFFF; /* White color for paragraph text */
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
@@ -190,21 +186,21 @@ footer .footer-content {
 #contact label {
     display: block;
     margin-bottom: 5px;
-    color: #FFD700; /* Gold color for labels */
+    color: #FFD700;
 }
 
 #contact input, #contact textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #FFD700; /* Gold border for inputs and textarea */
-    background-color: #333333; /* Darker background color for inputs and textarea */
-    color: #FFFFFF; /* White text color */
+    border: 1px solid #FFD700;
+    background-color: #333333;
+    color: #FFFFFF;
     margin-bottom: 10px;
 }
 
 #contact button {
-    background-color: #FFD700; /* Gold button background */
-    color: #000000; /* Black button text */
+    background-color: #FFD700;
+    color: #000000;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
@@ -212,13 +208,12 @@ footer .footer-content {
 }
 
 #contact button:hover {
-    background-color: #FFC107; /* Lighter gold background on hover */
+    background-color: #FFC107;
 }
-
 
 /* About Us Section Styles */
 #about .container {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 10px;
     margin: 20px auto;
@@ -226,11 +221,11 @@ footer .footer-content {
 }
 
 #about h1, #about h2, #about h3 {
-    color: #FFD700; /* Gold color for headings */
+    color: #FFD700;
 }
 
 #about p {
-    color: #FFFFFF; /* White color for paragraph text */
+    color: #FFFFFF;
 }
 
 /* Team Member Styles */
@@ -244,14 +239,14 @@ footer .footer-content {
 }
 
 .team-member p {
-    margin: 5px 0
+    margin: 5px 0;
 }
 
 /* FAQ Section Styles */
 #faq {
     padding: 60px 20px;
-    background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black background for better contrast */
-    color: #FFD700; /* Gold color for the text */
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFD700;
     margin: 20px;
     border-radius: 10px;
 }
@@ -264,15 +259,15 @@ footer .footer-content {
 }
 
 #faq h2 {
-    color: #FFD700; /* Gold color for headings */
+    color: #FFD700;
 }
 
 .faq-question {
     cursor: pointer;
     padding: 10px;
-    background: transparent; /* Transparent background for questions */
-    color: #FFD700; /* Gold color for questions */
-    border: 1px solid #FFD700; /* Gold border for questions */
+    background: transparent;
+    color: #FFD700;
+    border: 1px solid #FFD700;
     text-align: left;
     outline: none;
     font-size: 1.2em;
@@ -281,59 +276,53 @@ footer .footer-content {
 }
 
 .faq-question:hover {
-    background: #333333; /* Darker background on hover for better contrast */
+    background: #333333;
 }
 
 .faq-answer {
     padding: 10px;
-    background: transparent; /* Transparent background for answers */
+    background: transparent;
     display: none;
-    color: #FFFFFF; /* White text for answers */
-}
-
-.faq-answer{
-    display: none;
+    color: #FFFFFF;
 }
 
 .faq-answer.active {
     display: block;
 }
 
-
 /* Menu Category Styles */
 .menu-category {
     text-align: center;
     padding: 20px 15px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 20px;
     border-radius: 10px;
 }
 
 .menu-category h1 {
-    color: #FFD700; /* Gold color for main heading */
+    color: #FFD700;
     margin-bottom: 30px;
 }
 
 .highlighted {
-    border: 2px solid #FFD700; /* Gold border for highlight */
-    box-shadow: 0 0 10px #FFD700; /* Gold glow for highlight */
+    border: 2px solid #FFD700;
+    box-shadow: 0 0 10px #FFD700;
 }
-
 
 .categories {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-wrap: wrap;
 }
 
 .category-item {
     width: 30%;
     margin: 20px 0;
-    color: #FFD700; /* Gold color for headings */
-    text-align: left; /* Align text to left for better readability */
+    color: #FFD700;
+    text-align: left;
     padding: 10px;
-    box-sizing: border-box; /* Include padding and border in element's total width/height */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for category items */
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
 }
 
@@ -348,12 +337,12 @@ footer .footer-content {
 }
 
 .category-item p {
-    color: #FFFFFF; /* White color for paragraph text */
+    color: #FFFFFF;
 }
 
 .category-item .btn {
-    background-color: #FFD700; /* Gold button background */
-    color: #000000; /* Black button text */
+    background-color: #FFD700;
+    color: #000000;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -363,29 +352,27 @@ footer .footer-content {
 }
 
 .category-item .btn:hover {
-    background-color: #FFFFFF; /* White background on hover */
-    color: #000000
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
-
-/*Products styles*/
-
+/* Products Styles */
 #products .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
-    grid-gap: 20px; /* Space between items */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     padding: 20px;
     justify-items: center;
 }
 
 .product-item {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    color: #FFD700; /* Gold color for headings */
-    width: 100%; /* Full width for grid layout */
-    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    color: #FFD700;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .product-item img {
@@ -400,13 +387,13 @@ footer .footer-content {
 }
 
 .product-item p {
-    color: #FFFFFF; /* White color for paragraph text */
+    color: #FFFFFF;
     margin-bottom: 10px;
 }
 
 .product-item .price {
     font-size: 1.2em;
-    color: #FFD700; /* Gold color for price */
+    color: #FFD700;
 }
 
 /* Responsive Styles */
@@ -430,6 +417,14 @@ footer .footer-content {
 
     #specials .special-item {
         width: 100%;
+    }
+
+    .category-item {
+        width: 100%;
+    }
+
+    #products .container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -460,5 +455,9 @@ footer .footer-content {
 
     #specials .special-item {
         width: 100%;
+    }
+
+    #products .container {
+        grid-template-columns: 1fr;
     }
 }
