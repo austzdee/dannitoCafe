@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dannito Cafe</title>
+    <title>Danito Cafe</title>
     <link rel="stylesheet" href="./css/styles.css"> <!-- Link to CSS file -->
     <link rel="stylesheet" href="non-critical.css" media="print" onload="this.media='all'">
-
+    <meta name="description" content="Danito Café offers premium coffee blends and a cozy ambiance for relaxation and networking.">
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about.html" target="_blank">About Us</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="category.html">Category</a></li>
                 <li><a href="products.html">Products</a></li>
             </ul>
         </nav>
     </header>
-      <!-- About Us Section -->
-      <section id="about">
+    <!-- About Us Section -->
+    <section id="about">
         <div class="container">
             <h1>About Danito Café</h1>
             <p>Welcome to Danito Café, a place where passion for coffee meets a cozy and inspiring ambiance. We take pride in offering the finest coffee blends and an inviting space for you to work, network, and relax.</p>
@@ -46,10 +46,11 @@
                 <p><strong>Education:</strong> Bachelor's Degree in Business Management, University of London.</p>
                 <p><strong>Employment:</strong> Former Operations Manager at Café Delight, Business Consultant at Hospitality Experts.</p>
             </div>
+
             <h2>Sustainability</h2>
             <p>We are committed to sustainability and strive to minimize our environmental impact. From using eco-friendly packaging to supporting sustainable coffee farming practices, we are dedicated to making a positive difference for our planet and future generations.</p>
 
-            <h2>Dannito Foundation</h2>
+            <h2>Danito Foundation</h2>
             <p>We are proud supporters of the Costa Foundation, which aims to improve the lives of coffee-growing communities by providing access to education, healthcare, and clean water. We believe in giving back to the communities that make our coffee possible.</p>
 
             <h2>Policies and Reports</h2>
@@ -57,14 +58,18 @@
 
             <h2>Modern Slavery Statement</h2>
             <p>We are dedicated to preventing modern slavery and human trafficking in our operations and supply chains. Our Modern Slavery Statement outlines the steps we take to ensure that our business and suppliers adhere to ethical labor practices.</p>
-        
 
             <h2>Our Mission</h2>
             <p>At Danito Café, our mission is to provide an exceptional coffee experience in a warm and welcoming environment. We are committed to sourcing the finest beans, delivering excellent customer service, and creating a space where our community can come together.</p>
-            <footer>
-                <div class="footer-content">
-                    <p>&copy; 2025 Danito Café. All rights reserved.</p>                   
-                </div>
-            </footer>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Danito Café. All rights reserved.</p>
+        </div>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
 </body>
 </html>
