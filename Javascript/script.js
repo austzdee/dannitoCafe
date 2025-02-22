@@ -1,4 +1,7 @@
 function toggleAnswer(id) {
     const answer = document.getElementById(id);
-    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+    const isVisible = answer.style.display === 'block';
+    answer.style.display = isVisible ? 'none' : 'block';
+    answer.previousElementSibling.setAttribute('aria-expanded', !isVisible);
+
 }

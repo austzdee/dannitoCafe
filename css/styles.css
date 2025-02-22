@@ -280,10 +280,11 @@ footer .footer-content {
 }
 
 .faq-answer {
-    padding: 10px;
-    background: transparent;
+    
     display: none;
+    margin-top: 10px;
     color: #FFFFFF;
+    
 }
 
 .faq-answer.active {
