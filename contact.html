@@ -6,6 +6,7 @@
     <title>Contact Us - Danito Café</title>
     <link rel="stylesheet" href="./css/styles.css"> <!-- Link to your CSS file -->
 	    <script src="./Javascript/script.js" defer></script> <!--this is to ensure the scripts loads after HTML-->
+        <script src="./Javascript/sndEmail.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -41,7 +42,7 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" onclick="window.location.href='austzdee@hotmail.com';">Send</button>
+                <button type="submit" onclick="sendEmail()">Send</button>
             </form>
 
             <!-- Contact Information -->
