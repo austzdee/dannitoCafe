@@ -119,3 +119,11 @@ Key questions include:
 This section contains JavaScript functionality, allowing answers to appear when a question is clicked. It provides essential information for customers and enhances their overall experience.
 
 
+![Screenshot of Danito Café's Products Page](https://github.com/austzdee/dannitoCafe/blob/a3a6c939489a33e252b3650d607e5ce4412b5a57/Screenshot%202025-02-25%20171151.png)
+
+
+This page is designed to provide users with:
+- A visually appealing and functional interface.
+- Detailed coffee-based product descriptions.
+- Pricing information.
+- An interactive ordering feature.
