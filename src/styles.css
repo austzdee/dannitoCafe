@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@source "../*.html";
+@source "../Javascript/*.js";
+
+@theme {
+  --color-coffee-950: #160d08;
+  --color-coffee-900: #24130c;
+  --color-coffee-800: #3a2116;
+  --color-cream-50: #fffaf1;
+  --color-cream-100: #f8eddc;
+  --color-gold-300: #f5d27a;
+  --color-gold-400: #e8b84f;
+  --color-gold-500: #cf9430;
+}
+
+@layer base {
+  * { @apply box-border; }
+  html { @apply scroll-smooth; }
+  body {
+    @apply m-0 min-h-screen bg-coffee-950 bg-cover bg-center bg-fixed font-sans text-cream-50 antialiased;
+    background-image: linear-gradient(rgba(22, 13, 8, 0.72), rgba(22, 13, 8, 0.88)), url("../resources/p.webp");
+  }
+  a { @apply transition-colors duration-200; }
+  img { @apply block max-w-full; }
+  button, input, textarea { font: inherit; }
+  :focus-visible { @apply outline-2 outline-offset-4 outline-gold-300; }
+}
+
+@layer components {
+  header { @apply sticky top-0 z-50 border-b border-white/10 bg-coffee-950/90 px-5 py-4 shadow-lg backdrop-blur-md; }
+  nav ul { @apply m-0 flex list-none flex-wrap items-center justify-center gap-2 p-0; }
+  nav a { @apply block rounded-full px-4 py-2 text-sm font-semibold tracking-wide text-gold-300 hover:bg-white/10 hover:text-white; }
+
+  #greeting-container { @apply mx-auto mb-6 max-w-xl rounded-2xl border border-gold-400/30 bg-black/45 px-5 py-4 text-center text-gold-300 shadow-xl; }
+  #greeting-container h2 { @apply m-0 text-xl font-semibold sm:text-2xl; }
+
+  #hero { @apply mx-auto my-6 flex min-h-[68vh] max-w-6xl items-center justify-center rounded-3xl border border-white/10 bg-black/45 px-6 py-16 text-center shadow-2xl sm:px-10; }
+  #hero .hero-content { @apply max-w-3xl; }
+  #hero h1 { @apply m-0 text-4xl font-black tracking-tight text-gold-300 sm:text-5xl lg:text-6xl; }
+  #hero p { @apply my-6 text-lg leading-8 text-cream-100 sm:text-xl; }
+  .btn, #contact button { @apply inline-flex items-center justify-center rounded-full bg-gold-400 px-6 py-3 font-bold text-coffee-950 shadow-lg transition hover:-translate-y-0.5 hover:bg-gold-300 focus-visible:outline-gold-300; }
+
+  #specials, .menu-category, #contact, #faq, #about .container { @apply mx-auto my-6 max-w-6xl rounded-3xl border border-white/10 bg-black/55 px-6 py-12 shadow-2xl sm:px-10; }
+  #specials h2, .menu-category h1, #contact h1, #contact h2, #faq h2, #about h1, #about h2, #about h3 { @apply text-gold-300; }
+  #specials h2, .menu-category h1, #contact h1, #faq h2, #about h1 { @apply mb-8 text-3xl font-black tracking-tight sm:text-4xl; }
+  #specials .container { @apply grid gap-6 md:grid-cols-3; }
+  .special-item { @apply rounded-2xl border border-gold-400/20 bg-coffee-900/75 p-6 text-left shadow-lg; }
+  .special-item h3 { @apply mb-3 text-xl font-bold text-gold-300; }
+  .special-item p { @apply m-0 leading-7 text-cream-100; }
+
+  #about .container { @apply max-w-4xl; }
+  #about h2 { @apply mb-3 mt-10 text-2xl font-bold; }
+  #about h3 { @apply mb-2 text-xl font-bold; }
+  #about p { @apply leading-8 text-cream-100; }
+  .team-member { @apply mb-6 rounded-2xl border border-white/10 bg-coffee-900/65 p-6; }
+
+  #contact .container, #faq .container { @apply mx-auto max-w-4xl; }
+  #contact p { @apply leading-7 text-cream-100; }
+  #contact form { @apply my-8 grid gap-5; }
+  .form-group { @apply grid gap-2; }
+  #contact label { @apply font-semibold text-gold-300; }
+  #contact input, #contact textarea { @apply w-full rounded-xl border border-gold-400/30 bg-coffee-900/90 px-4 py-3 text-white placeholder:text-cream-100/50 focus:border-gold-300 focus:outline-none focus:ring-2 focus:ring-gold-300/30; }
+  #contact textarea { @apply min-h-36 resize-y; }
+
+  #faq { @apply mt-8; }
+  .faq-question { @apply mt-3 w-full cursor-pointer rounded-xl border border-gold-400/30 bg-coffee-900/80 px-5 py-4 text-left text-base font-semibold text-gold-300 transition hover:border-gold-300 hover:bg-coffee-800; }
+  .faq-answer { @apply hidden rounded-b-xl border-x border-b border-white/10 bg-black/35 px-5 py-4 leading-7 text-cream-100; }
+  .faq-answer.active { @apply block; }
+
+  .categories { @apply grid gap-6 md:grid-cols-3; }
+  .category-item { @apply overflow-hidden rounded-2xl border border-white/10 bg-coffee-900/80 p-5 text-left shadow-xl; }
+  .category-item img { @apply aspect-[4/3] w-full rounded-xl object-cover; }
+  .category-item h2 { @apply mb-2 mt-5 text-2xl font-bold text-gold-300; }
+  .category-item p { @apply mb-5 leading-7 text-cream-100; }
+  .highlighted { @apply ring-2 ring-gold-300 ring-offset-4 ring-offset-coffee-950; }
+
+  #products { @apply mx-auto max-w-7xl px-5 py-10; }
+  #products .container { @apply grid gap-6 pb-6 sm:grid-cols-2 lg:grid-cols-4; }
+  .product-item { @apply overflow-hidden rounded-2xl border border-white/10 bg-coffee-900/80 p-5 text-center shadow-xl transition hover:-translate-y-1 hover:border-gold-400/40; }
+  .product-item img { @apply aspect-square w-full rounded-xl object-cover; }
+  .product-item h2 { @apply mb-2 mt-5 text-xl font-bold text-gold-300; }
+  .product-item p { @apply leading-7 text-cream-100; }
+  .product-item .price { @apply text-lg font-black text-gold-300; }
+
+  footer { @apply mt-10 border-t border-white/10 bg-coffee-950/90 px-5 py-8 text-center text-sm text-gold-300; }
+  footer a { @apply text-gold-300 hover:text-white hover:underline; }
+  .footer-content { @apply flex flex-col items-center gap-2; }
+}
+
+@media (max-width: 640px) {
+  nav ul { @apply gap-1; }
+  nav a { @apply px-3 py-2 text-xs; }
+}

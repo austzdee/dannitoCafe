@@ -1,0 +1,12 @@
+{
+  "name": "danito-cafe",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist/css && cp -R *.html Javascript resources dist/ && npx @tailwindcss/cli -i ./src/styles.css -o ./dist/css/styles.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
